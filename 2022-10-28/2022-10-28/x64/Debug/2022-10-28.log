@@ -1,0 +1,7 @@
+﻿  2022-10-28.cpp
+  tester.cpp
+D:\Armando\uniBa\2A_1S\Algoritmi e strutture dati\2A_1S_ASD\2022-10-28\2022-10-28\tester.cpp(29,30): warning C4101: 'iter': unreferenced local variable
+  Generating Code...
+D:\Armando\uniBa\2A_1S\Algoritmi e strutture dati\2A_1S_ASD\2022-10-28\2022-10-28\list_vector.h(142): warning C4715: 'List_vector<int>::read': not all control paths return a value
+tester.obj : error LNK2005: main already defined in 2022-10-28.obj
+D:\Armando\uniBa\2A_1S\Algoritmi e strutture dati\2A_1S_ASD\2022-10-28\x64\Debug\2022-10-28.exe : fatal error LNK1169: one or more multiply defined symbols found
