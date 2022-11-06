@@ -1,3 +1,7 @@
-﻿  studente.cpp
-C:\Users\Utente\Desktop\progetti ASD\2A_1S_ASD\2022-10-21\2022-10-21\studente.cpp(62,12): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  2022-10-21.vcxproj -> C:\Users\Utente\Desktop\progetti ASD\2A_1S_ASD\2022-10-21\x64\Debug\2022-10-21.exe
+﻿  esame.cpp
+  Source.cpp
+  studente.cpp
+D:\Armando\repositoryUni\2A_1S_ASD\2022-10-21\2022-10-21\studente.cpp(59,12): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  LINK : D:\Armando\repositoryUni\2A_1S_ASD\2022-10-21\x64\Debug\2022-10-21.exe not found or not built by the last incremental link; performing full link
+  2022-10-21.vcxproj -> D:\Armando\repositoryUni\2A_1S_ASD\2022-10-21\x64\Debug\2022-10-21.exe
