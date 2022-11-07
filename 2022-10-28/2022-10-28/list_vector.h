@@ -61,14 +61,14 @@ class List_vector : public Linear_list<T, int>{
 	int array_dimension_; // array's dimension
 };
 
-// costruttore
+// costruttore	DI DEFAULT, INIZIALIZZA A 10
 template< class T >
 List_vector< T >::List_vector() {
   array_dimension_ = 10;
   this->create();
 }
 
-// costruttore
+// costruttore CON VARIABILE
 template< class T >
 List_vector< T >::List_vector(int dim){
   array_dimension_ = dim;
@@ -106,6 +106,7 @@ bool List_vector< T >::empty() const {
     return(length_ == 0);
 }
 
+//=========================================== NON CAPITO 
 template< class T >
 typename List_vector< T >::position List_vector< T >::begin() const {
 	return(1); // e quindi pos(1)=pos(n+1) se la lista -Ah vuota (n=0)
@@ -113,6 +114,7 @@ typename List_vector< T >::position List_vector< T >::begin() const {
 
 template< class T >
 typename List_vector< T >::position List_vector< T >::next(position p) const {
+	//se p è compreso fra 0 e lunghezza...
 	if ( (0 < p) && (p < length_+1)) // precondizione
 		return(p+1);
 	else

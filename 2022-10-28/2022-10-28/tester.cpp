@@ -26,7 +26,7 @@ using namespace std;
 
 int main(){
   List_vector<int> list1, list2;
-  List_vector<int>::position iter;
+  //List_vector<int>::position iter; 
 
 	int x;
 
