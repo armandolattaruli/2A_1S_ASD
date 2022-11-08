@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+using namespace std;
 template <class tipoDato>
 class Lista {
 private:
@@ -22,7 +24,7 @@ public:
 	
 };
 
-
+template <class tipoDato>
 Lista::Lista() {
 	elementi = new tipoDato[10];
 }

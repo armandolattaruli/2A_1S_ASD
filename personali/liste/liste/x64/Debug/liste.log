@@ -1,17 +1,17 @@
 ﻿  tester.cpp
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): error C2955: 'Lista': use of class template requires template argument list
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(3): message : see declaration of 'Lista'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): error C2244: 'Lista::Lista': unable to match function definition to an existing declaration
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26): message : see declaration of 'Lista::Lista'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): message : definition
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): message : 'Lista::Lista(void)'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): message : existing declarations
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): message : 'Lista<tipoDato>::Lista(int)'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(26,1): message : 'Lista<tipoDato>::Lista(void)'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): error C2244: 'Lista::Lista': unable to match function definition to an existing declaration
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31): message : see declaration of 'Lista::Lista'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): message : definition
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): message : 'Lista::Lista(int)'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): message : existing declarations
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): message : 'Lista<tipoDato>::Lista(int)'
-D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(31,1): message : 'Lista<tipoDato>::Lista(void)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): error C2955: 'Lista': use of class template requires template argument list
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(5): message : see declaration of 'Lista'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): error C2244: 'Lista::Lista': unable to match function definition to an existing declaration
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28): message : see declaration of 'Lista::Lista'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): message : definition
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): message : 'Lista::Lista(void)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): message : existing declarations
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): message : 'Lista<tipoDato>::Lista(int)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(28,1): message : 'Lista<tipoDato>::Lista(void)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): error C2244: 'Lista::Lista': unable to match function definition to an existing declaration
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33): message : see declaration of 'Lista::Lista'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): message : definition
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): message : 'Lista::Lista(int)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): message : existing declarations
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): message : 'Lista<tipoDato>::Lista(int)'
+D:\uniba\2A_1S_ASD\personali\liste\liste\liste_puntatori.h(33,1): message : 'Lista<tipoDato>::Lista(void)'

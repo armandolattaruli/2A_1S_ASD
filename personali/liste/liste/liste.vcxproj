@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="liste_puntatori.h" />
   </ItemGroup>
   <ItemGroup>
