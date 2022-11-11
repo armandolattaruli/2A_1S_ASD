@@ -1,17 +1,26 @@
 #include <iostream>
 #include "liste_puntatori.h"
 
+using namespace std;
+
 int main() {
 	
-	int* a = new int[5];
+	//Lista<int> myList();
 
-	for (int i = 0; i < 5; i++) {
-		a[i] = rand();
-	}
+	Nodo<int> primo(5);
+	Nodo<int> secondo(6);
+	Nodo<int> terzo(7);
 
-	for (int i = 0; i < 5; i++) {
-		std::cout << a[i] << ", ";
-	}
+	primo.setNodoSucc(&secondo);
+
+	secondo.setNodoPrec(&primo);
+	secondo.setNodoSucc(&terzo);
+
+	terzo.setNodoPrec(&secondo);
+
+	cout << "1 elemento: " << primo.getElementoNodo() << " = " << &primo << " " << primo.getNodoSucc() << endl;
+	cout << "2 elemento:     " << secondo.getNodoPrec()  << " " << secondo.getElementoNodo() << " = " << &secondo << " " << secondo.getNodoSucc() << endl;
+	cout << "3 elemento:     " << terzo.getNodoPrec() << " " << terzo.getElementoNodo() << " = " << &terzo << endl;
 
 	return 0;
 }

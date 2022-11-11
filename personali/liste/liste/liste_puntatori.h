@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
-using namespace std;
+#include "Nodo.h"
+
 template <class tipoDato>
-class Lista {
+class Lista{
 private:
 	int dimensione; //la dimensione "fisica" della lista
 	int lunghezza; // il numero di elementi effettivamente presenti nella lista
@@ -15,7 +16,7 @@ public:
 
 
 
-	void setDimensione(); //imposta la dimensione
+	void setDimensione(int newDim); //imposta la dimensione
 	void setLunghezza();  // imposta la lunghezza
 	int getDimensione();
 	int getLunghezza();
@@ -25,12 +26,18 @@ public:
 };
 
 template <class tipoDato>
-Lista::Lista() {
+Lista<tipoDato>::Lista() {
 	elementi = new tipoDato[10];
 }
 
 template <class tipoDato>
-Lista::Lista(int dimUtente) {
+Lista<tipoDato>::Lista(int dimUtente) {
 	elementi = new tipoDato[dimUtente];
 }
+
+template <class tipoDato>
+void Lista<tipoDato>::setDimensione(int newDim) {
+	dimensione = newDim;
+}
+
 
