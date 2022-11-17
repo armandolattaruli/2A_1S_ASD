@@ -1,43 +1,52 @@
-#pragma once
+//realizzazione circolare
+
 #include <iostream>
 #include "Nodo.h"
 
-template <class tipoDato>
+template <class tipoVar>
 class Lista{
 private:
-	int dimensione; //la dimensione "fisica" della lista
-	int lunghezza; // il numero di elementi effettivamente presenti nella lista
-	tipoDato* elementi; // array dinamico che conterrà i valori
+	//int dimensione; //la dimensione "fisica" della lista
+	//int lunghezza; // il numero di elementi effettivamente presenti nella lista
+	tipoVar* elementi; // array dinamico che conterrà i valori
 
 public:
-	Lista();
-	Lista(int dimUtente);
-	~Lista();
+	Lista(); //costruttore
+	//Lista(); costruttore di copia ?
+	~Lista(); //distruttore
 
+	typedef Nodo<tipoVar>* posizione;
 
+	//operatori
+	void creaLista();
+	/*bool listaVuota();
+	tipoelem leggiLista(posizione);
+	void scriviLista(tipoelem, posizione);
+	posizione primoLista();
+	bool fineLista(posizione);	
+	void insLista(tipoelem, posizione&);
+	void cancLista(posizione& p);*/
 
-	void setDimensione(int newDim); //imposta la dimensione
-	void setLunghezza();  // imposta la lunghezza
-	int getDimensione();
-	int getLunghezza();
-
-	void inserisciElemento(int posizione, tipoDato valore);
+	posizione succLista(posizione);
+	posizione precLista(posizione);
+	
 	
 };
 
-template <class tipoDato>
-Lista<tipoDato>::Lista() {
-	elementi = new tipoDato[10];
-}
+template <class tipoVar>
+void Lista<tipoVar>::creaLista() {
+	/*tipoelem ElementoNullo;
+	lista = new Cella;
+	lista->setElemento(ElementoNullo);
+	lista->setSucc(lista);
+	lista->setPrec(lista);*/
+	//la sentinella punta a se stessa
 
-template <class tipoDato>
-Lista<tipoDato>::Lista(int dimUtente) {
-	elementi = new tipoDato[dimUtente];
-}
-
-template <class tipoDato>
-void Lista<tipoDato>::setDimensione(int newDim) {
-	dimensione = newDim;
+	tipoVar ElementoNullo;
+	Lista lista = new Nodo;
+	lista->setElemento(ElementoNullo);
+	lista->setNodoPrec(lista);
+	lista->setNodoSucc(lista);
 }
 
 

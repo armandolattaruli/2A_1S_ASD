@@ -9,6 +9,7 @@ private:
 	tipoVar elementoNodo;
 
 public:
+	Nodo() {};
 	Nodo(tipoVar v);
 	//~Nodo();
 
