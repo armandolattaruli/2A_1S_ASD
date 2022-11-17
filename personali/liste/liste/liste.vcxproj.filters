@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Nodo.h">
+    <ClInclude Include="cella.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="liste_puntatori.h">
+    <ClInclude Include="circLista.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

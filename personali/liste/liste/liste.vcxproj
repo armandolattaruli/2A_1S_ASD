@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Nodo.h" />
-    <ClInclude Include="liste_puntatori.h" />
+    <ClInclude Include="cella.h" />
+    <ClInclude Include="circLista.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tester.cpp" />

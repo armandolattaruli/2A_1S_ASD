@@ -1,28 +1,33 @@
 #include <iostream>
-#include "liste_puntatori.h"
+#include "circLista.h"
 
 using namespace std;
 
 int main() {
 	
-
+						 
 	/*TEST PER NODI*/
-	/*Nodo<int> primo(5);
-	Nodo<int> secondo(6);
-	Nodo<int> terzo(7);
+	Cella<int> primo(5);
+	Cella<int> secondo(6);
+	Cella<int> terzo(7);
 
-	primo.setNodoSucc(&secondo);
+	primo.setCellaSucc(&secondo);
 
-	secondo.setNodoPrec(&primo);
-	secondo.setNodoSucc(&terzo);
+	secondo.setCellaPrec(&primo);
+	secondo.setCellaSucc(&terzo);
 
-	terzo.setNodoPrec(&secondo);
+	terzo.setCellaPrec(&secondo);
 
-	cout << "1 elemento: " << primo.getElementoNodo() << " = " << &primo << " " << primo.getNodoSucc() << endl;
-	cout << "2 elemento:     " << secondo.getNodoPrec()  << " " << secondo.getElementoNodo() << " = " << &secondo << " " << secondo.getNodoSucc() << endl;
-	cout << "3 elemento:     " << terzo.getNodoPrec() << " " << terzo.getElementoNodo() << " = " << &terzo << endl;*/
+	cout << "1 elemento: " << primo.getElementoCella() << " = " << &primo << " " << primo.getCellaSucc() << endl;
+	cout << "2 elemento:     " << secondo.getCellaPrec()  << " " << secondo.getElementoCella() << " = " << &secondo << " " << secondo.getCellaSucc() << endl;
+	cout << "3 elemento:     " << terzo.getCellaPrec() << " " << terzo.getElementoCella() << " = " << &terzo << endl;
 
 
+	/*Lista<int> myList;
+
+	myList.creaLista();
+
+	cout << "Puntatore proprio: " << &myList << endl;	*/
 
 	return 0;
 }
