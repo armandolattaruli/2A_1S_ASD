@@ -7,7 +7,7 @@ int main() {
 	
 						 
 	/*TEST PER NODI*/
-	Cella<int> primo(5);
+	/*Cella<int> primo(5);
 	Cella<int> secondo(6);
 	Cella<int> terzo(7);
 
@@ -20,14 +20,15 @@ int main() {
 
 	cout << "1 elemento: " << primo.getElementoCella() << " = " << &primo << " " << primo.getCellaSucc() << endl;
 	cout << "2 elemento:     " << secondo.getCellaPrec()  << " " << secondo.getElementoCella() << " = " << &secondo << " " << secondo.getCellaSucc() << endl;
-	cout << "3 elemento:     " << terzo.getCellaPrec() << " " << terzo.getElementoCella() << " = " << &terzo << endl;
+	cout << "3 elemento:     " << terzo.getCellaPrec() << " " << terzo.getElementoCella() << " = " << &terzo << endl;*/
 
 
-	/*Lista<int> myList;
+	Lista<int> myList;
 
-	myList.creaLista();
 
-	cout << "Puntatore proprio: " << &myList << endl;	*/
+	cout << "Puntatore proprio: " << &myList << endl;
+	
+
 
 	return 0;
 }

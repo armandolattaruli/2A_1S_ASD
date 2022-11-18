@@ -1,49 +1,45 @@
-#pragma once
-using namespace std;
+#ifndef _cella_h
+#define _cella_h
 
-template <class tipoVar>
+
+template <class T>
 class Cella {
-private:
-	Cella *CellaPrec;
-	Cella *CellaSucc;
-	tipoVar elementoCella;
-
 public:
-	Cella();
-	Cella(tipoVar v);
-	//~Cella();
+	typedef T tipoelem;
+	
+	Cella() {}
 
-	void setCellaPrec(Cella *valore) {
-		CellaPrec = valore;
-	}
-
-	void setCellaSucc(Cella *valore) {
-		CellaSucc = valore;
-	}
-
-	void setValoreCella(tipoVar newVal) {
+	void setValoreCella(tipoelem newVal) {
 		elementoCella = newVal;
 	}
 
-	Cella* getCellaPrec() {
-		return CellaPrec;
+	tipoelem getElementoCella() const {
+		return elementoCella;
 	}
 
-	Cella* getCellaSucc() {
+	void setCellaSucc(Cella* valore) {
+		CellaSucc = valore;
+	}
+
+	Cella* getCellaSucc() const{
 		return CellaSucc;
 	}
 
-	tipoVar getElementoCella() {
-		return elementoCella;
+
+	void setCellaPrec(Cella* valore) {
+		CellaPrec = valore;
 	}
+
+	Cella* getCellaPrec() const {
+		return CellaPrec;
+	}
+				
+
+private:
+	Cella* CellaPrec;
+	Cella* CellaSucc;
+	tipoelem elementoCella;
 };
 
-template <class tipoVar>
-Cella<tipoVar>::Cella() {
-	
-};
 
-template <class tipoVar>
-Cella<tipoVar>::Cella(tipoVar v) {
-	elementoCella = v;
-};
+#endif	_cella_h
