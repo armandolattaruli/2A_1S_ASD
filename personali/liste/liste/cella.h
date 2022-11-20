@@ -13,7 +13,7 @@ public:
 		elementoCella = newVal;
 	}
 
-	tipoelem getElementoCella() const {
+	tipoelem getElementoCella()  {
 		return elementoCella;
 	}
 
@@ -21,7 +21,7 @@ public:
 		CellaSucc = valore;
 	}
 
-	Cella* getCellaSucc() const{
+	Cella* getCellaSucc() {
 		return CellaSucc;
 	}
 
@@ -30,7 +30,7 @@ public:
 		CellaPrec = valore;
 	}
 
-	Cella* getCellaPrec() const {
+	Cella* getCellaPrec()  {
 		return CellaPrec;
 	}
 				

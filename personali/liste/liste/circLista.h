@@ -3,6 +3,7 @@
 
 #include "cella.h"
 
+
 template <class T>
 class Lista {
 
@@ -14,21 +15,19 @@ public:
 
 	//operatori
 	void creaLista();
-	/*bool listaVuota();
-	tipoelem leggiLista(posizione);
-	void scriviLista(tipoelem, posizione);
+	bool listaVuota();
+	typename Cella<T>::tipoelem leggiLista(posizione p);
+	void scriviLista(typename Cella<T>::tipoelem elemento, posizione p);
 	posizione primoLista();
-	bool fineLista(posizione);
-	void insLista(tipoelem, posizione&);
-	void cancLista(posizione& p);*/
+	bool fineLista(posizione p);
+	void insLista(typename Cella<T>::tipoelem elemento, posizione& p);
+	/*void cancLista(posizione& p); */
 
 	/*posizione succLista(posizione);
 	posizione precLista(posizione);*/
 
 
 private:
-	//int dimensione; //la dimensione "fisica" della lista
-	//int lunghezza; // il numero di elementi effettivamente presenti nella lista
 	posizione elementi; // array dinamico che conterrà i valori
 };
 
@@ -42,7 +41,7 @@ Lista<T>::Lista() {
 template <class T>
 void Lista<T>::creaLista() {
 	
-	//dato che ElementoNullo è creato ma non inizializzato, non si sa come passarlo a (riga 49)
+	//dato che ElementoNullo è creato ma non inizializzato, non si sa come passarlo a (riga 48)
 	//typename Cella<T>::tipoelem ElementoNullo;
 
 	elementi = new Cella<T>;
@@ -50,6 +49,37 @@ void Lista<T>::creaLista() {
 	elementi->setCellaPrec(elementi);
 	elementi->setCellaSucc(elementi);
 }
+
+template<class T> 
+bool Lista<T>::listaVuota() {
+	return ((elementi->getCellaSucc() == elementi) && (elementi->getCellaPrec() == elementi));
+}
+
+template <class T>
+typename Cella<T>::tipoelem Lista<T>::leggiLista(posizione p) {
+	return p->getElementoCella();
+}
+
+template <class T>
+void Lista<T>::scriviLista(typename Cella<T>::tipoelem elemento, posizione p) {
+	p->setValoreCella;
+}
+
+template <class T>
+typename Lista<T>::posizione Lista<T>::primoLista() {
+	return elementi->getCellaSucc();
+}
+
+template <class T>
+bool Lista<T>::fineLista(posizione p) {
+	return (p == elementi)
+}
+
+template <class T>
+void Lista<T>::insLista(typename Cella<T>::tipoelem elemento, posizione& p) {
+
+}
+
 
 #endif _circLista_H
 

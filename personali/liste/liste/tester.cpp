@@ -28,6 +28,8 @@ int main() {
 
 	cout << "Puntatore proprio: " << &myList << endl;
 	
+	//lista vuota
+	cout << "Se lista vuota: " << myList.listaVuota() << endl;	
 
 
 	return 0;
