@@ -19,13 +19,11 @@ public:
 	typename Cella<T>::tipoelem leggiLista(posizione p);
 	void scriviLista(typename Cella<T>::tipoelem elemento, posizione p);
 	posizione primoLista();
+	posizione succLista(posizione p);
+	posizione precLista(posizione p);
 	bool fineLista(posizione p);
 	void insLista(typename Cella<T>::tipoelem elemento, posizione& p);
-	/*void cancLista(posizione& p); */
-
-	/*posizione succLista(posizione);
-	posizione precLista(posizione);*/
-
+	void cancLista(posizione& p); 	
 
 private:
 	posizione elementi; // array dinamico che conterrà i valori
@@ -71,15 +69,44 @@ typename Lista<T>::posizione Lista<T>::primoLista() {
 }
 
 template <class T>
-bool Lista<T>::fineLista(posizione p) {
-	return (p == elementi)
+typename Lista<T>::posizione Lista<T>::succLista(Lista::posizione p) {
+	return p->getCellaSucc();
+}
+
+template <class T>
+typename Lista<T>::posizione Lista<T>::precLista(Lista::posizione p) {
+	return p->getCellaPrec();
+}
+
+template <class T>
+bool Lista<T>::fineLista(Lista::posizione p) {
+	return (p == elementi);
 }
 
 template <class T>
 void Lista<T>::insLista(typename Cella<T>::tipoelem elemento, posizione& p) {
+	Lista::posizione temp;
 
+	temp = new Cella<T>;
+	temp->setValoreCella(elemento);
+	temp->setCellaPrec(p->getCellaPrec());
+	//passiamo direttamente il puntatore di p, non il suo successore!!
+	temp->setCellaSucc(p);
+
+	(p->getCellaPrec())->setCellaSucc(temp);
+	p->setCellaPrec(temp);
+	p = temp;
 }
 
+template<class T>
+void Lista<T>::cancLista(Lista::posizione& p) {
+	Lista::posizione temp;
+	temp = p;
+	(p->getCellaSucc())->setCellaPrec(p->getCellaPrec());
+	(p->getCellaPrec())->setCellaSucc(p->getCellaSucc());
+	p = p->getCellaSucc();
+	delete(temp);
+}
 
 #endif _circLista_H
 

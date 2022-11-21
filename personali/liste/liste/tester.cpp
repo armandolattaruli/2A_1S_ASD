@@ -23,13 +23,23 @@ int main() {
 	cout << "3 elemento:     " << terzo.getCellaPrec() << " " << terzo.getElementoCella() << " = " << &terzo << endl;*/
 
 
-	Lista<int> myList;
+	Lista<float> myList;	 
+	Lista<float> *primoElemento;
 
 
 	cout << "Puntatore proprio: " << &myList << endl;
 	
 	//lista vuota
+	primoElemento = &myList;
 	cout << "Se lista vuota: " << myList.listaVuota() << endl;	
+
+	Cella<float> myCella;
+	Cella<float> * punt;
+	myCella.setValoreCella(5);
+
+	myList.insLista(20, punt);
+
+
 
 
 	return 0;
