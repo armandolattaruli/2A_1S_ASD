@@ -1,6 +1,8 @@
 #ifndef _CODAVT_
 #define _CODAVT_
 
+#include <assert.h>
+
 template < class tipoelem >
 class Coda {
 
@@ -30,13 +32,23 @@ public:
 
 	void fuoriCoda() {
 		if (!codaVuota()) {
+			/* %
+			maxlung serve a ricominciare dall'inizio della coda
+			nel momento in cui testa + 1 dà resto 0, allora si ricomincia
+			*/
 			testa = (testa + 1) % maxlung;
 			lung--;
 		}
 	}
 
 	void inCoda(tipoelem a) {
+
 		if (lung != maxlung) {
+			/*
+			   % maxlung serve a ricominciare dall'inizio della coda
+				nel momento in cui testa + lung dà resto 0, allora si ricomincia
+			*/
+
 			elementi[(testa + lung) % maxlung] = a;
 			lung++;
 		}

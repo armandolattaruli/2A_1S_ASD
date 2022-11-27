@@ -1,2 +1,3 @@
-﻿  codavt.cpp
+﻿  tester.cpp
+D:\Armando\repositoryUni\2A_1S_ASD\personali\Code_vettore\Code_vettore\codavt.cpp(31): warning C4715: 'Coda<int>::leggiCoda': not all control paths return a value
   Code_vettore.vcxproj -> D:\Armando\repositoryUni\2A_1S_ASD\personali\Code_vettore\x64\Debug\Code_vettore.exe
